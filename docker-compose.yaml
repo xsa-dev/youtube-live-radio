@@ -5,4 +5,5 @@ services:
     container_name: youtube-service
     image: youtube-stream:latest
     environment: 
-      YOUTUBE_KEY: YOUR-YOUTUBE_KEY
+      STREAM_URL: YOUR-STREAM_URL
+      STREAM_KEY: YOUR-STREAM_KEY
