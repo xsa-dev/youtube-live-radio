@@ -16,10 +16,6 @@ docker build -t youtube-stream .
 ```bash
 docker-compose up -d
 ```
-# Cloud hostings
-## Deploy
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Setup
 
