@@ -3,7 +3,11 @@ version: "3.9"
 services:
   youtube-service:
     container_name: youtube-service
-    image: youtube-stream:latest
-    environment: 
-      STREAM_URL: YOUR-STREAM_URL
-      STREAM_KEY: YOUR-STREAM_KEY
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      FROM_URL: FROM_YUTUBE_URL
+      STREAM_URL: YOU_STREAM_URL
+      STREAM_KEY: YOU_STREAM_KEY
+      

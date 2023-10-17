@@ -10,20 +10,9 @@ This service ready to docker-compose.
 ```bash
 docker build -t youtube-stream .
 ```
-2. Change YOUTUBE_KEY in docker-compose.yaml
+2. Change YOUTUBE_KEY, STREAM_KEY, STREAM_URL in docker-compose.yaml
 3. And service up by:
 
 ```bash
 docker-compose up -d
 ```
-
-## Setup
-
-* Make sure you are allowed to create live streams on YouTube. 
-* Fork this repository, swap out the background image to your liking, and put all MP3 files to be played in the `mp3` folder. They will be shuffled and looped infinitely.
-* Create and configure a broadcast with [`enableAutoStop = false`](https://developers.google.com/youtube/v3/live/docs/liveBroadcasts#contentDetails.enableAutoStop). At the time of writing, using the UI, this is only possible by scheduling a stream in the future (otherwise the flag is set to `true`). Alternatively, you can also use the Live Streaming API to do this.
-* Deploy this app (for instance, using the Heroku deploy button above) to a host of your choice. Set the `YOUTUBE_KEY` environment variable to the stream key given to you in the previous step.
-
-# Attributions
-
-The MP3 in this repository ("The Elevator Bossa Nova") is being used under the Free License of: https://www.bensound.com/royalty-free-music/track/the-elevator-bossa-nova
